@@ -1,0 +1,559 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Sistem Penerimaan Murid Baru 2025
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-gray-700">
+  <!-- Header top bar -->
+  <div class="bg-gray-900 text-gray-200 text-xs sm:text-sm">
+   <div class="max-w-7xl mx-auto flex justify-center sm:justify-start gap-6 px-4 py-1 sm:py-2">
+    <div class="flex items-center gap-1">
+     <i class="fas fa-phone-alt text-xs sm:text-sm">
+     </i>
+     <span>
+      085143000190
+     </span>
+    </div>
+    <div class="flex items-center gap-1">
+     <i class="fas fa-envelope text-xs sm:text-sm">
+     </i>
+     <span>
+      smkketintang@gmail.com
+     </span>
+    </div>
+   </div>
+  </div>
+  <!-- Navigation bar -->
+  <nav class="bg-gray-900 text-white text-sm sm:text-base">
+   <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 sm:py-4">
+    <div class="flex items-center gap-4">
+     <img alt="Logo SMK Ketintang Surabaya red hexagon with white school emblem and text SKETSA 147 www.smkketintang.sch.id" class="w-16 h-16 object-contain" height="80" src="https://storage.googleapis.com/a1aa/image/7cd2d282-bc1b-4034-b1c2-67c540d16100.jpg" width="80"/>
+     <div class="font-extrabold text-white text-lg sm:text-xl select-none">
+      SKETSA 147
+      <div class="text-xs sm:text-sm font-normal">
+       www.smkketintang.sch.id
+      </div>
+     </div>
+    </div>
+    <ul class="hidden md:flex items-center gap-6 font-semibold">
+     <li>
+      <a class="hover:text-red-600" href="index.html">
+       Beranda
+      </a>
+     </li>
+     <li class="relative group cursor-pointer">
+      <a class="hover:text-red-600 flex items-center gap-1" href="#">
+       Profil
+       <i class="fas fa-chevron-down text-xs">
+       </i>
+      </a>
+      <ul class="absolute top-full left-0 bg-gray-900 text-white text-sm rounded shadow-lg mt-1 min-w-[150px] opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity">
+       <li>
+        <a class="block px-3 py-1 hover:bg-red-600" href="#">
+         Profil 1
+        </a>
+       </li>
+       <li>
+        <a class="block px-3 py-1 hover:bg-red-600" href="#">
+         Profil 2
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a class="hover:text-red-600" href="artikel.html">
+       Artikel
+      </a>
+     </li>
+     <li class="relative group cursor-pointer">
+      <a class="hover:text-red-600 flex items-center gap-1" href="informasi.html">
+       Informasi
+       <i class="fas fa-chevron-down text-xs">
+       </i>
+      </a>
+      <ul class="absolute top-full left-0 bg-gray-900 text-white text-sm rounded shadow-lg mt-1 min-w-[150px] opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity">
+       <li>
+        <a class="block px-3 py-1 hover:bg-red-600" href="#">
+         Informasi 1
+        </a>
+       </li>
+       <li>
+        <a class="block px-3 py-1 hover:bg-red-600" href="#">
+         Informasi 2
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a class="hover:text-red-600" href="fasilitas.html">
+       Fasilitas
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-red-600" href="prestasi.html">
+       Prestasi
+      </a>
+     </li>
+    </ul>
+    <div class="hidden md:flex items-center gap-3">
+     <button class="bg-red-600 hover:bg-red-700 text-white font-semibold rounded px-4 py-2 transition" type="button">
+      Hubungi
+     </button>
+     <button class="bg-red-700 hover:bg-red-800 text-white font-semibold rounded px-4 py-2 transition flex items-center gap-2" type="button">
+      <i class="fas fa-sign-in-alt">
+      </i>
+      Log In
+     </button>
+    </div>
+    <!-- Mobile menu button -->
+    <div class="md:hidden flex items-center">
+     <button aria-label="Toggle menu" class="text-white focus:outline-none focus:ring-2 focus:ring-white" id="mobile-menu-button">
+      <i class="fas fa-bars text-xl">
+      </i>
+     </button>
+    </div>
+   </div>
+   <!-- Mobile menu -->
+   <div class="hidden bg-gray-900 text-white px-4 pb-4 md:hidden" id="mobile-menu">
+    <ul class="flex flex-col gap-3 font-semibold">
+     <li>
+      <a class="block py-2 border-b border-gray-700" href="#">
+       Beranda
+      </a>
+     </li>
+     <li>
+      <details class="group">
+       <summary class="cursor-pointer py-2 border-b border-gray-700 flex justify-between items-center">
+        Profil
+        <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition-transform">
+        </i>
+       </summary>
+       <ul class="pl-4 mt-1 flex flex-col gap-1">
+        <li>
+         <a class="block py-1" href="#">
+          Profil 1
+         </a>
+        </li>
+        <li>
+         <a class="block py-1" href="#">
+          Profil 2
+         </a>
+        </li>
+       </ul>
+      </details>
+     </li>
+     <li>
+      <a class="block py-2 border-b border-gray-700" href="#">
+       Artikel
+      </a>
+     </li>
+     <li>
+      <details class="group">
+       <summary class="cursor-pointer py-2 border-b border-gray-700 flex justify-between items-center">
+        Informasi
+        <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition-transform">
+        </i>
+       </summary>
+       <ul class="pl-4 mt-1 flex flex-col gap-1">
+        <li>
+         <a class="block py-1" href="#">
+          Informasi 1
+         </a>
+        </li>
+        <li>
+         <a class="block py-1" href="#">
+          Informasi 2
+         </a>
+        </li>
+       </ul>
+      </details>
+     </li>
+     <li>
+      <a class="block py-2 border-b border-gray-700" href="fasilitas.html">
+       Fasilitas
+      </a>
+     </li>
+     <li>
+      <a class="block py-2 border-b border-gray-700" href="prestasi.html">
+       Prestasi
+      </a>
+     </li>
+     <li class="flex gap-3 pt-2">
+      <button class="bg-red-600 hover:bg-red-700 text-white font-semibold rounded px-4 py-2 w-full" type="button">
+       Hubungi
+      </button>
+      <button class="bg-red-700 hover:bg-red-800 text-white font-semibold rounded px-4 py-2 w-full flex justify-center items-center gap-2" type="button">
+       <i class="fas fa-sign-in-alt">
+       </i>
+       Log In
+      </button>
+     </li>
+    </ul>
+   </div>
+  </nav>
+  <!-- Hero section with background image and overlay -->
+  <div class="relative w-full h-[280px] sm:h-[320px] md:h-[360px] lg:h-[400px] xl:h-[440px]">
+   <img alt="Background image showing Sistem Penerimaan Murid Baru 2025 banner with red overlay and school students" class="w-full h-full object-cover brightness-50" height="440" loading="eager" src="https://storage.googleapis.com/a1aa/image/4fd481a2-98b3-4421-25b0-5949ed3a280d.jpg" width="1920"/>
+   <div class="absolute inset-0 flex flex-col justify-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white" style="max-width: 1200px">
+    <nav aria-label="Breadcrumb" class="text-xs sm:text-sm font-normal mb-1 select-none">
+     <ol class="list-reset flex gap-1 sm:gap-2 text-white/80">
+      <li>
+       <a class="hover:underline" href="#">
+        Beranda
+       </a>
+      </li>
+      <li>
+       <span>
+        &gt;
+       </span>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Uncategorized
+       </a>
+      </li>
+      <li>
+       <span>
+        &gt;
+       </span>
+      </li>
+      <li class="text-red-600">
+       Sistem Penerimaan Murid Baru 2025
+      </li>
+     </ol>
+    </nav>
+    <h1 class="font-extrabold text-2xl sm:text-3xl md:text-4xl leading-tight max-w-4xl mb-3">
+     Sistem Penerimaan Murid Baru 2025
+    </h1>
+    <div class="flex flex-wrap gap-4 text-sm sm:text-base font-normal max-w-4xl">
+     <div class="flex items-center gap-2">
+      <i class="far fa-calendar-alt text-base">
+      </i>
+      <span>
+       Diterbitkan : Sel, 6 Mei 2025
+      </span>
+     </div>
+     <div class="flex items-center gap-2">
+      <i class="far fa-edit text-base">
+      </i>
+      <span>
+       Penulis :
+       <span class="font-semibold">
+        sketsa147
+       </span>
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Main content area -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row gap-8">
+   <!-- Left content with image and text -->
+   <section class="md:w-2/3 flex flex-col gap-6 text-sm sm:text-base text-gray-600">
+    <img alt="SPMB 2025 poster showing students in school uniforms, curriculum info, registration periods, and facilities in red and white theme" class="w-full object-contain rounded" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/fb159116-8174-45df-b3bf-21a4235a5487.jpg" width="800"/>
+    <p>
+     Sistem Penerimaan Murid Baru SMK Ketintang Surabaya – Tahun Pelajaran 2025/2026
+    </p>
+    <p>
+     Be Competence And Qualified
+    </p>
+    <p>
+     Kompetensi Keahlian :
+    </p>
+    <ul class="list-disc list-inside space-y-1 font-semibold text-gray-700">
+     <li>
+      AKUNTANSI DAN KEUANGAN LEMBAGA
+     </li>
+     <li>
+      MANAJEMEN PERKANTORAN
+     </li>
+     <li>
+      BISNIS DIGITAL (MARKETING ONLINE)
+     </li>
+     <li>
+      TEKNIK KOMPUTER DAN JARINGAN
+     </li>
+     <li>
+      DESAIN KOMUNIKASI VISUAL (MULTIMEDIA)
+     </li>
+    </ul>
+    <p class="pt-4 font-normal text-gray-600">
+     Periode Pendaftaran :
+     <br/>
+     Gelombang 1 : 21 April – 5 Mei 2025
+     <br/>
+     Gelombang 2 : 6 Mei – 1 Juni 2025
+     <br/>
+     Gelombang 3 : 2 Juni – Kuota Terpenuhi
+    </p>
+    <p class="pt-4 font-normal text-gray-600">
+     Menerapkan 3 Kurikulum
+    </p>
+    <ul class="list-disc list-inside space-y-1 font-normal text-gray-600">
+     <li>
+      Kurikulum Nasional (Merdeka)
+     </li>
+     <li>
+      Kurikulum Enterpreneure
+     </li>
+     <li>
+      Kurikulum Industri
+     </li>
+    </ul>
+    <p class="pt-4 font-normal text-gray-600">
+     Whatsapps :
+     <br/>
+     0813-3026-6770 (Pak Toni)
+     <br/>
+     0899-3501-366 (Bu Wulan)
+    </p>
+    <div class="flex items-center gap-2 text-xs text-red-600 mt-6">
+     <i class="fas fa-tag">
+     </i>
+     <span>
+      Uncategorized
+     </span>
+    </div>
+    </section>
+   <!-- Right sidebar with articles -->
+   <aside class="md:w-1/3 flex flex-col gap-6 text-gray-700 text-sm sm:text-base">
+    <div class="bg-red-600 text-white font-semibold px-4 py-3 rounded select-none">
+     Artikel Lainnya
+    </div>
+    <article class="border-b border-gray-300 pb-4">
+     <h3 class="font-semibold text-gray-900 truncate">
+      Farewell Party SMK Ketintang...
+     </h3>
+     <p class="text-gray-600 mt-1 line-clamp-3">
+      Acara ini menjadi penutup perjalanan tiga tahun para siswa menempuh pendidikan di
+          bangku SMK. Dengan mengusung tema “A...
+     </p>
+     <time class="block text-xs text-gray-400 mt-2">
+      Sel, 6 Mei 2025 | 12:52
+     </time>
+    </article>
+    <article class="border-b border-gray-300 pb-4">
+     <h3 class="font-semibold text-gray-900 truncate">
+      Siswa SMK Ketintang Surabaya...
+     </h3>
+     <p class="text-gray-600 mt-1 line-clamp-3">
+      Siswa SMK Ketintang Surabaya Raih Juara 1 Harapan LKS Digital Marketing di SMK PGRI
+          13 Surabaya Kabar membanggakan...
+     </p>
+     <time class="block text-xs text-gray-400 mt-2">
+      Rab, 26 Februari 2025 | 5:45
+     </time>
+    </article>
+    <article class="border-b border-gray-300 pb-4">
+     <h3 class="font-bold text-gray-900 truncate">
+      TIM @passketsa.a atas juara Lomba LKBB...
+     </h3>
+     <p class="text-gray-600 mt-1 line-clamp-3">
+      Selamat kepada TIM @passketsa.a atas juara Lomba LKBB Dasawirasatria II SE Jawa Timur
+          yang dilaksanakan SMAN 10 Surabaya.Juara 1. JUARA...
+     </p>
+     <time class="block text-xs text-gray-400 mt-2">
+      Sel, 7 Januari 2025 | 5:33
+     </time>
+    </article>
+    <article class="border-b border-gray-300 pb-4">
+     <h3 class="font-bold text-gray-900 truncate">
+      PEKAN PROJEK PENGUATAN PROFIL...
+     </h3>
+     <p class="text-gray-600 mt-1 line-clamp-3">
+      SMK Ketintang Surabaya dengan bangga menyelenggarakan acara bertajuk Pekan Projek
+          Penguatan Profil Pelajar Pancasila. Acara ini mengangkat tema...
+     </p>
+     <time class="block text-xs text-gray-400 mt-2">
+      Sel, 7 Januari 2025 | 5:26
+     </time>
+    </article>
+   </aside>
+  </main>
+  <!-- Footer red bar -->
+  <footer class="bg-red-700 h-24 w-full">
+  </footer>
+  <script>
+   const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Footer Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#e30613] text-white">
+  <footer class="max-w-screen-xl mx-auto px-6 pt-10 pb-6">
+    <div
+      class="bg-[#f01414] rounded-xl p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-6"
+    >
+      <div>
+        <h2 class="font-extrabold text-xl leading-tight">
+          Info lebih lanjut :
+        </h2>
+        <p class="mt-1 text-sm font-normal">Hubungi kami melalui email</p>
+      </div>
+      <form
+        class="flex flex-col sm:flex-row items-center gap-4 w-full max-w-md"
+        action="#"
+        method="POST"
+      >
+        <input
+          type="email"
+          placeholder="Email anda"
+          class="flex-grow rounded-full py-3 px-5 text-[#7a1a1a] placeholder-[#7a1a1a] focus:outline-none"
+          required
+        />
+        <button
+          type="submit"
+          class="bg-[#c22a2a] hover:bg-[#a32222] transition-colors rounded-full py-3 px-8 flex items-center gap-2 font-semibold text-white"
+        >
+          <i class="fas fa-paper-plane"></i>
+          KIRIM
+        </button>
+      </form>
+    </div>
+
+    <div
+      class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm font-normal"
+    >
+      <div>
+        <h3 class="font-extrabold mb-4 text-base">Contact Person :</h3>
+        <ul class="space-y-2">
+          <li class="flex items-center gap-2">
+            <i class="fas fa-phone-alt text-white"></i>
+            085143000190
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fas fa-fax text-white"></i>
+            0318284121
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fab fa-whatsapp text-white"></i>
+            6285143000190
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fas fa-envelope text-white"></i>
+            smkketintang@gmail.com
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-extrabold mb-4 text-base leading-tight">
+          Profil SMK <br />
+          KETINTANG <br />
+          SURABAYA
+        </h3>
+        <ul class="space-y-4 font-semibold text-sm">
+          <li>Tentang Kami</li>
+          <li>Visi dan Misi</li>
+          <li>Sejarah</li>
+          <li>Sambutan Kepala</li>
+          <li>Video</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-extrabold mb-4 text-base">Alamat</h3>
+        <p class="leading-relaxed max-w-xs">
+          Jalan Ketintang 147-<br />
+          151 Surabaya
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-extrabold mb-4 text-base">Sosial Media</h3>
+        <div class="flex flex-wrap gap-3">
+          <a
+            href="#"
+            aria-label="Facebook"
+            class="w-9 h-9 rounded-full bg-white text-[#e30613] flex items-center justify-center"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="#"
+            aria-label="Twitter"
+            class="w-9 h-9 rounded-full bg-white text-[#e30613] flex items-center justify-center"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="#"
+            aria-label="Tumblr"
+            class="w-9 h-9 rounded-full bg-white text-[#e30613] flex items-center justify-center"
+            ><i class="fab fa-tumblr"></i
+          ></a>
+          <a
+            href="#"
+            aria-label="Instagram"
+            class="w-9 h-9 rounded-full bg-white text-[#e30613] flex items-center justify-center"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="#"
+            aria-label="YouTube"
+            class="w-9 h-9 rounded-full bg-white text-[#e30613] flex items-center justify-center"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-gray-300 border-opacity-30 mt-10" />
+
+    <div
+      class="mt-6 flex flex-col sm:flex-row justify-between text-xs font-normal text-white"
+    >
+      <p class="max-w-md leading-relaxed">
+        Copyright © 2024 SMK Ketintang Surabaya - Design by Rohman Satria
+        Abdillah All Rights Reserved.
+      </p>
+      <div
+        class="flex flex-wrap gap-4 mt-4 sm:mt-0 text-xs font-normal leading-relaxed"
+      >
+        <a href="#" class="hover:underline">Privacy Policy</a>
+        <span>|</span>
+        <a href="#" class="hover:underline">Peta Situs</a>
+        <a href="#" class="hover:underline">Kontak</a>
+      </div>
+    </div>
+  </footer>
+
+  <button
+    aria-label="Scroll to top"
+    class="fixed bottom-6 right-6 w-10 h-10 rounded-full bg-[#007bff] text-white flex items-center justify-center shadow-lg hover:bg-[#0056b3] transition"
+  >
+    <i class="fas fa-angle-up"></i>
+  </button>
+</body>
+</html>

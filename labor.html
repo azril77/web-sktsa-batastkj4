@@ -1,0 +1,467 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Laboratorium Kimia
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom scrollbar for news and agenda sections */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #e60000;
+    border-radius: 10px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  </style>
+ </head>
+ <body class="bg-white text-gray-700 font-sans leading-relaxed">
+  <!-- Top bar -->
+  <div class="bg-[#1a1a1a] text-white text-xs sm:text-sm">
+   <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center px-3 sm:px-6 py-1">
+    <div class="flex space-x-4 items-center">
+     <div class="flex items-center space-x-1">
+      <i class="fas fa-phone-alt text-[10px] sm:text-xs">
+      </i>
+      <span>
+       085143000190
+      </span>
+     </div>
+     <div class="flex items-center space-x-1">
+      <i class="fas fa-envelope text-[10px] sm:text-xs">
+      </i>
+      <span>
+       smkketintang@gmail.com
+      </span>
+     </div>
+    </div>
+    <div class="flex space-x-4 text-[10px] sm:text-xs mt-1 sm:mt-0">
+     <a class="hover:underline" href="#">
+      Staf
+     </a>
+     <a class="hover:underline" href="#">
+      Ekstrakurikuler
+     </a>
+     <a class="hover:underline" href="#">
+      Info PPDB
+     </a>
+     <a class="hover:underline" href="#">
+      Alumni
+     </a>
+    </div>
+   </div>
+  </div>
+  <!-- Navigation bar -->
+  <nav class="bg-[#1a1a1a] text-white">
+   <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-3 sm:px-6 py-3">
+    <a class="flex items-center space-x-2" href="#">
+     <img alt="Logo of SKETSA 147 with red background and white text" class="w-10 h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/63180829-741c-423c-81e0-0c8c60957e55.jpg" width="40"/>
+     <div class="text-xs sm:text-sm font-bold leading-none">
+      <div>
+       SKETSA 147
+      </div>
+      <div class="text-[8px] sm:text-[10px] font-normal">
+       www.smkketintang.sch.id
+      </div>
+     </div>
+    </a>
+    <ul class="hidden md:flex space-x-4 text-xs sm:text-sm font-semibold">
+     <li>
+      <a class="hover:text-red-600" href="index.html">
+       Beranda
+      </a>
+     </li>
+     <li class="relative group cursor-pointer">
+      <span class="hover:text-red-600 flex items-center">
+       Profil
+       <i class="fas fa-chevron-down ml-1 text-[8px]">
+       </i>
+      </span>
+      <ul class="absolute left-0 top-full mt-1 bg-[#1a1a1a] border border-gray-700 rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-xs">
+       <li>
+        <a class="block px-3 py-1 hover:bg-red-600" href="#">
+         Submenu 1
+        </a>
+       </li>
+       <li>
+        <a class="block px-3 py-1 hover:bg-red-600" href="#">
+         Submenu 2
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a class="hover:text-red-600" href="artikel.html">
+       Artikel
+      </a>
+     </li>
+     <li class="relative group cursor-pointer">
+      <span class="hover:text-red-600 flex items-center">
+       Informasi
+       <i class="fas fa-chevron-down ml-1 text-[8px]">
+       </i>
+      </span>
+      <ul class="absolute left-0 top-full mt-1 bg-[#1a1a1a] border border-gray-700 rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity text-xs">
+       <li>
+        <a class="block px-3 py-1 hover:bg-red-600" href="#">
+         Submenu 1
+        </a>
+       </li>
+       <li>
+        <a class="block px-3 py-1 hover:bg-red-600" href="#">
+         Submenu 2
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a class="hover:text-red-600" href="fasilitas.html">
+       Fasilitas
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-red-600" href="prestasi.html">
+       Prestasi
+      </a>
+     </li>
+    </ul>
+    <div class="hidden md:flex space-x-2">
+     <button class="bg-red-600 hover:bg-red-700 text-white text-xs sm:text-sm font-semibold rounded px-3 py-1 flex items-center space-x-1" type="button">
+      <i class="fas fa-phone-alt">
+      </i>
+      <span>
+       Hubungi
+      </span>
+     </button>
+     <button class="bg-red-600 hover:bg-red-700 text-white text-xs sm:text-sm font-semibold rounded px-3 py-1 flex items-center space-x-1" type="button">
+      <i class="fas fa-sign-in-alt">
+      </i>
+      <span>
+       Log In
+      </span>
+     </button>
+    </div>
+   </div>
+  </nav>
+  <!-- Hero section with background image and overlay text -->
+  <div class="relative w-full h-[280px] sm:h-[320px] md:h-[360px] lg:h-[400px] xl:h-[450px]">
+   <img alt="Laboratorium Kimia room with tables, chairs, scientific equipment, and windows" class="w-full h-full object-cover brightness-[0.3]" height="400" src="https://storage.googleapis.com/a1aa/image/dccf5431-a88f-45bb-733a-3033716c52a8.jpg" width="1920"/>
+   <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 text-white">
+    <div class="text-xs sm:text-sm mb-1 font-semibold flex flex-wrap justify-center gap-x-1 gap-y-0.5">
+     <span>
+      Beranda
+     </span>
+     <i class="fas fa-angle-right text-[10px] mt-[3px]">
+     </i>
+     <span>
+      Fasilitas
+     </span>
+     <i class="fas fa-angle-right text-[10px] mt-[3px]">
+     </i>
+     <span class="text-red-600">
+      Laboratorium Kimia
+     </span>
+    </div>
+    <h1 class="font-extrabold text-lg sm:text-xl md:text-2xl lg:text-3xl">
+     Laboratorium Kimia
+    </h1>
+   </div>
+  </div>
+  <!-- Main content area -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8">
+   <!-- Left content with image and text -->
+   <div class="flex-1 max-w-full lg:max-w-[720px]">
+    <img alt="Interior of Laboratorium Kimia showing tables, stools, scientific equipment, and windows" class="w-full rounded-md mb-4" height="400" src="https://storage.googleapis.com/a1aa/image/efd02a69-85c5-41ff-f532-975b3a06ce35.jpg" width="720"/>
+    <p class="text-xs sm:text-sm text-justify text-gray-600 mb-2">
+     <span class="text-red-600 font-bold text-base">
+      Q
+     </span>
+     ua dolori non voluptas contraria est, sed doloris privatio. Omnia contrario, quos etiam insanos esse vultis. Quid Zeno? An vero displicuit ea, quae tributa est animi virtutibus tanta praestantia? Primum cum ista res olimgo odio est, nisi quod est turpis? Ad eos enim res ab Epicuro praecepto dicantur. Quisquici enim a sapientia proficiscitur, ad continua debet explerum esse omnibus suis partibus; Ut optime, secundum naturam affectum esse possit.
+    </p>
+    <p class="text-xs sm:text-sm text-justify text-gray-600 mb-2">
+     Nummus in Croesi divitiis obscuratur, pars est tamen divitiarum. Quamvis enim depravatae non sint, provae tamen esse possunt. Idemque diverserunt naturam hominis in animum et corpus. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Immo cilo genere; Illa sunt similia: habes ocias est cuipiam oculorum, corpore alius sanescit; Potius ergo Illa dicantur: tumpe esse, viri non esse stabilitati dixeris, frangi, succumberes. Diuue sunt enim res quaecum, ut tu verba solum putes.
+    </p>
+    <p class="text-xs sm:text-sm text-red-600 font-semibold mb-1">
+     Dokumentasi Fasilitas
+    </p>
+    <hr class="border-gray-300"/>
+   </div>
+   <!-- Right sidebar with articles and agenda -->
+   <aside class="w-full lg:w-[320px] flex flex-col gap-8">
+    <!-- Artikel & Berita -->
+    <section>
+     <div class="flex justify-between items-center mb-3">
+      <h2 class="text-red-600 font-bold text-sm">
+       Artikel &amp; Berita
+      </h2>
+      <button class="bg-red-600 text-white text-xs px-3 py-1 rounded hover:bg-red-700 font-semibold" type="button">
+       View more
+      </button>
+     </div>
+     <div class="space-y-4 max-h-[320px] overflow-y-auto scrollbar-thin pr-2">
+      <article class="text-xs sm:text-sm">
+       <h3 class="font-semibold text-gray-800 truncate">
+        Sistem Penerimaan Murid Baru...
+       </h3>
+       <p class="text-gray-500 truncate">
+        Sistem Penerimaan Murid Baru SMK Ketintang Surabaya – Tahun Pelajaran 2022/2023 Be Competence And Qualifiek Kompetensi keahlian–
+       </p>
+       <time class="text-gray-400 text-[10px]">
+        Sel, 6 Mei 2025 | 11:38
+       </time>
+      </article>
+      <article class="text-xs sm:text-sm">
+       <h3 class="font-semibold text-gray-800 truncate">
+        Farewell Party SMK Ketintang...
+       </h3>
+       <p class="text-gray-500 truncate">
+        Acara ini menjadi penutup perjalanan tiga tahun para siswa menempuh pendidikan di bangku SMK. Dengan mengusung tema “A
+       </p>
+       <time class="text-gray-400 text-[10px]">
+        Sel, 6 Mei 2025 | 11:52
+       </time>
+      </article>
+      <article class="text-xs sm:text-sm">
+       <h3 class="font-semibold text-gray-800 truncate">
+        Siswa SMK Ketintang Surabaya...
+       </h3>
+       <p class="text-gray-500 truncate">
+        Siswa SMK Ketintang Surabaya Raih Juara 1 Harapan (KS Digital Marketing di SMK PGRI 13 Surabaya kabar membanggakan...
+       </p>
+       <time class="text-gray-400 text-[10px]">
+        Rabu, 26 Februari 2025 | 1:45
+       </time>
+      </article>
+      <article class="text-xs sm:text-sm">
+       <h3 class="font-semibold text-gray-800 truncate">
+        TIM @passketsa.a atas juara Lomba LKBB...
+       </h3>
+       <p class="text-gray-500 truncate">
+        Selamat kepada TIM @passketsa.a atas juara Lomba LKBB Dasawacanaist 1 SE Jawa Timur yang dilaksanakan SMAN 10 Surabayacuara 1 JUARA..
+       </p>
+       <time class="text-gray-400 text-[10px]">
+        Sel, 7 Januari 2025 | 15:33
+       </time>
+      </article>
+     </div>
+    </section>
+    <!-- Agenda -->
+    <section>
+     <div class="flex justify-between items-center mb-3">
+      <h2 class="text-red-600 font-bold text-sm">
+       Agenda
+      </h2>
+      <button class="bg-red-600 text-white text-xs px-3 py-1 rounded hover:bg-red-700 font-semibold" type="button">
+       View more
+      </button>
+     </div>
+     <div class="border border-red-600 rounded p-3 text-xs sm:text-sm text-gray-700 space-y-2">
+      <div class="flex items-center space-x-2 text-red-600">
+       <i class="far fa-calendar-alt">
+       </i>
+       <span>
+        13 Sep 2024
+       </span>
+       <i class="far fa-clock">
+       </i>
+       <span>
+        07:00 - 11:00 WIB
+       </span>
+      </div>
+      <div class="font-semibold truncate">
+       Kegiatan Maulid Nabi Muhammad...
+      </div>
+      <div class="flex items-center space-x-1 text-gray-500">
+       <i class="fas fa-map-marker-alt text-xs">
+       </i>
+       <span>
+        Lapangan SMK Ketintang Surabaya
+       </span>
+      </div>
+     </div>
+    </section>
+   </aside>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-red-600 text-white">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
+    <!-- Newsletter -->
+    <div class="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-4">
+     <div>
+      <h3 class="font-bold text-lg mb-1">
+       Info lebih lanjut :
+      </h3>
+      <p class="text-xs">
+       Hubungi kami melalui email
+      </p>
+     </div>
+     <form class="flex w-full max-w-md" onsubmit="event.preventDefault()">
+      <input aria-label="Email anda" class="flex-grow rounded-l-md px-3 py-2 text-black text-xs sm:text-sm focus:outline-none" placeholder="Email anda" required="" type="email"/>
+      <button aria-label="Kirim" class="bg-red-700 hover:bg-red-800 rounded-r-md px-4 py-2 text-xs sm:text-sm font-semibold flex items-center space-x-1" type="submit">
+       <i class="fas fa-paper-plane">
+       </i>
+       <span>
+        KIRIM
+       </span>
+      </button>
+     </form>
+    </div>
+    <!-- Footer main content -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-xs sm:text-sm">
+     <!-- Contact Person -->
+     <div>
+      <h4 class="font-semibold mb-3">
+       Contact Person :
+      </h4>
+      <ul class="space-y-2">
+       <li class="flex items-center space-x-2">
+        <i class="fas fa-phone-alt">
+        </i>
+        <span>
+         085143000190
+        </span>
+       </li>
+       <li class="flex items-center space-x-2">
+        <i class="fas fa-phone-alt">
+        </i>
+        <span>
+         0318284121
+        </span>
+       </li>
+       <li class="flex items-center space-x-2">
+        <i class="fas fa-phone-alt">
+        </i>
+        <span>
+         6285143000190
+        </span>
+       </li>
+       <li class="flex items-center space-x-2">
+        <i class="fas fa-envelope">
+        </i>
+        <span>
+         smkketintang@gmail.com
+        </span>
+       </li>
+      </ul>
+     </div>
+     <!-- Profil SMK KETINTANG SURABAYA -->
+     <div>
+      <h4 class="font-semibold mb-3">
+       Profil SMK KETINTANG SURABAYA
+      </h4>
+      <ul class="space-y-2">
+       <li>
+        <a class="hover:underline" href="#">
+         Tentang Kami
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         Visi dan Misi
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         Sejarah
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         Sambutan Kepala
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         Video
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- Alamat -->
+     <div>
+      <h4 class="font-semibold mb-3">
+       Alamat
+      </h4>
+      <p>
+       Jalan Ketintang 147-151
+       <br/>
+       Surabaya
+      </p>
+     </div>
+     <!-- Sosial Media -->
+     <div>
+      <h4 class="font-semibold mb-3">
+       Sosial Media
+      </h4>
+      <div class="flex space-x-4 text-lg">
+       <a aria-label="Facebook" class="hover:text-gray-300" href="#">
+        <i class="fab fa-facebook-f">
+        </i>
+       </a>
+       <a aria-label="Twitter" class="hover:text-gray-300" href="#">
+        <i class="fab fa-twitter">
+        </i>
+       </a>
+       <a aria-label="Tumblr" class="hover:text-gray-300" href="#">
+        <i class="fab fa-tumblr">
+        </i>
+       </a>
+       <a aria-label="Instagram" class="hover:text-gray-300" href="#">
+        <i class="fab fa-instagram">
+        </i>
+       </a>
+       <a aria-label="YouTube" class="hover:text-gray-300" href="#">
+        <i class="fab fa-youtube">
+        </i>
+       </a>
+      </div>
+     </div>
+    </div>
+    <!-- Footer bottom -->
+    <div class="border-t border-red-700 pt-4 text-[10px] sm:text-xs flex flex-col sm:flex-row justify-between items-center">
+     <p>
+      Copyright © 2024 SMK Ketintang Surabaya - Design by Rohman Satria Abdillah All Rights Reserved.
+     </p>
+     <div class="flex space-x-4 mt-2 sm:mt-0">
+      <a class="hover:underline" href="#">
+       Privacy Policy
+      </a>
+      <a class="hover:underline" href="#">
+       Peta Situs
+      </a>
+      <a class="hover:underline" href="#">
+       Kontak
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <!-- Scroll to top button -->
+  <button aria-label="Scroll to top" class="fixed bottom-4 right-4 bg-red-600 hover:bg-red-700 text-white p-2 rounded-full text-xs sm:text-sm hidden" id="scrollTopBtn">
+   <i class="fas fa-chevron-up">
+   </i>
+  </button>
+  <script>
+   // Show scroll to top button on scroll
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollTopBtn.classList.remove("hidden");
+    } else {
+      scrollTopBtn.classList.add("hidden");
+    }
+  });
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+  </script>
+ </body>
+</html>
